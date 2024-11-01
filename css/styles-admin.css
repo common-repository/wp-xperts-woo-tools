@@ -1,0 +1,124 @@
+.woo-tools-settings{
+    margin-top: 70px;
+}
+.woo-tools-settings .woo-tools-settings-left{
+    width: 65%;
+    float: left;
+}
+.woo-tools-settings .woo-tools-settings-right{
+    width: 30%;
+    float: right;
+}
+.wx-tools-section{
+    padding: 0 8px;
+    margin-bottom: 20px;
+    position: relative;
+    min-height: 40px;
+    background-color: #fff;
+}
+.wx-switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.wx-switch input{
+    display: none;
+}
+.wx-switch-slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.wx-switch-slider:before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.wx-switch input:checked + .wx-switch-slider {
+    background: #008ec2;
+}
+
+.wx-switch input:focus + .wx-switch-slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.wx-switch input:checked + .wx-switch-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.wx-tools-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.wx-tools-section .wx-tools-arrow:before{
+    content: "\f140";
+    padding: 10px;
+    left: 0;
+    display: inline-block;
+    font: 400 20px/1 dashicons;
+    text-decoration: none !important;
+    color: #72777c;
+}
+.wx-tools-section.wx-active-section .wx-tools-arrow:before{
+    content: "\f142";
+}
+.wx-tools-section h3{
+    margin: 0;
+    padding: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.wx-tools-section .wx-tools-section-fields{
+    padding: 10px;
+    display: none;
+}
+.wx-tools-section .wx-tools-section-fields.fields-active{
+    display: block;
+}
+.wx-tools-section .wx-tools-section-fields p.submit{
+    margin-top: 0;
+}
+.wx-tools-section .wx-tools-section-fields p.tool-desc{
+    font-style: italic;
+    font-size: 12px;
+    background-color: #f8f8f8;
+    margin: 0;
+    display: inline-block;
+    padding: 4px 10px;
+    border: solid 1px #e4e4e4;
+    border-radius: 1px;
+}
+.wx-tools-section .wx-tools-section-fields .wx-settings-field{
+    margin-bottom: 20px;
+}
+.wx-tools-section .wx-tools-section-fields .wx-settings-field label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.wx-tools-section .wx-tools-section-fields .wx-settings-field input{
+
+}
